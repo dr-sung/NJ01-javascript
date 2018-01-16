@@ -19,8 +19,10 @@ console.log("distance  = " + s.distance());
 
 function Square() {
 }
+
+// inherite properties from MyShape superclass
 Square.prototype = new MyShape();
-Square.prototype.__proto__ = MyShape.prototype;
+// add new properties
 Square.prototype.width = 0;
 Square.prototype.area = function() {
 	return this.width * this.width;
