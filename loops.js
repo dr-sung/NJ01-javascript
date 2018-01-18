@@ -14,11 +14,11 @@ for (let p = 0; p < a.length; p++) {
     console.log(a[p]);
 }
 
-for (const c of a) {
+for (const c of a) { // "of" for value
     console.log(c);
 }
 
-for (const c in a) {
+for (const c in a) { // "in" for index
     console.log(c, a[c]);
 }
 
