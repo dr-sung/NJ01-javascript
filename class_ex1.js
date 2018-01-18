@@ -13,8 +13,9 @@ console.log('c1=', c1.odometer, c1.gas, c1.mpg);
 c1.gas = 5;
 c1.drive(20);
 console.log('c1=', c1.odometer, c1.gas, c1.mpg);
-car.prototype.make = null; // adding a new property
+car.prototype.make = 'GM'; // adding a new property
 let c2 = new car(35);
+console.log('make', c1.make, c2.make);
 c2.make = 'Ford';
 c2.gas = 100;
 c2.drive(100);
