@@ -24,6 +24,7 @@ function Square() {
 Square.prototype = new MyShape();
 // add new properties
 Square.prototype.width = 0;
+// override 'area' function
 Square.prototype.area = function() {
 	return this.width * this.width;
 }
